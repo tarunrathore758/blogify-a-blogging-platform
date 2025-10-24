@@ -2,8 +2,12 @@ import axios from "axios";
 
 // 🔥 Hardcode backend URL to avoid Vite env issues
 const API = axios.create({
-  baseURL: "http://localhost:5000/api",
+  baseURL:
+    import.meta.env.MODE === "development"
+      ? "http://localhost:5000/api"
+      : "https://blogify-a-blogging-platform.onrender.com/api",
 });
+
 
 // Blogs
 export const createBlog  = (blogData) => API.post("/blogs", blogData);
