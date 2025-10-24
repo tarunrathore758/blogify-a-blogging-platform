@@ -1,0 +1,29 @@
+# from project root: create .gitignore
+@"
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Environment
+.env
+frontend/.env
+backend/.env
+
+# build artifacts
+/dist
+/build
+
+# OS
+.DS_Store
+Thumbs.db
+
+# uploads / user files
+uploads/
+frontend/public/uploads/
+backend/uploads/
+
+# IDE
+.vscode/
+.idea/
+"@ | Out-File -Encoding utf8 .gitignore

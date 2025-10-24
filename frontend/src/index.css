@@ -1,0 +1,7 @@
+@import "tailwindcss";
+body {
+  background-image: url('https://www.transparenttextures.com/patterns/stardust.png');
+  background-repeat: repeat;
+  background-color: #000;
+  opacity: 80%;
+}
